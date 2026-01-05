@@ -67,6 +67,106 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Key Benefits Section (client requested images near top) */}
+      <section className="py-8 space-y-6">
+        <header className="text-center space-y-2">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Why CoreVolt™ Changes Everything</h2>
+          <p className="text-sm md:text-base text-foreground/80 max-w-[60ch] mx-auto">
+            Four breakthroughs that make direct-lava geothermal a practical, scalable, zero‑emission power solution.
+          </p>
+        </header>
+
+        <div className="grid gap-4 md:gap-6 md:grid-cols-2">
+          <div className="rounded-xl border border-[var(--lava)]/25 bg-[var(--basalt-light)]/90 overflow-hidden hover-lift transition-all duration-300">
+            <div className="flex flex-col md:flex-row h-full">
+              <div className="flex flex-col gap-3 p-4 md:w-1/2">
+                <h3 className="text-sm md:text-base font-semibold">New Energy Installation: Cost to Build</h3>
+                <p className="text-xs md:text-sm text-foreground/75 tracking-wide" style={{ wordSpacing: "0.08em" }}>
+                  CoreVolt™ delivers utility-scale baseload power at a fraction of the upfront cost of other
+                  large-scale energy projects. Compared to solar, wind, and nuclear, CoreVolt cuts billions from
+                  typical build budgets while still providing 24/7 clean power.
+                </p>
+              </div>
+              <div className="relative w-full md:w-1/2 h-94 md:h-98 bg-black/30">
+                <Image
+                  src="/new%201.png"
+                  alt="CoreVolt benefit illustration 1"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-xl border border-[var(--lava)]/25 bg-[var(--basalt-light)]/90 overflow-hidden hover-lift transition-all duration-300">
+            <div className="flex flex-col md:flex-row h-full">
+              <div className="flex flex-col gap-3 p-4 md:w-1/2">
+                <h3 className="text-sm md:text-base font-semibold">How CoreVolt Could Cut Your Power Bill</h3>
+                <p className="text-xs md:text-sm text-foreground/75 tracking-wide" style={{ wordSpacing: "0.08em" }}>
+                  By replacing expensive, fuel-dependent generation with direct-lava geothermal, CoreVolt can
+                  dramatically lower household electricity bills. The system is designed to unlock savings of
+                  30–60% or more on typical monthly power costs over the life of a plant.
+                </p>
+              </div>
+              <div className="relative w-full md:w-1/2 h-94 md:h-98 bg-black/30">
+                <Image
+                  src="/new%202.png"
+                  alt="CoreVolt benefit illustration 2"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-xl border border-[var(--lava)]/25 bg-[var(--basalt-light)]/90 overflow-hidden hover-lift transition-all duration-300">
+            <div className="flex flex-col md:flex-row h-full">
+              <div className="flex flex-col gap-3 p-4 md:w-1/2">
+                <h3 className="text-sm md:text-base font-semibold">Electricity Cost per kWh</h3>
+                <p className="text-xs md:text-sm text-foreground/75 tracking-wide" style={{ wordSpacing: "0.08em" }}>
+                  CoreVolt targets some of the lowest levelized costs of electricity on the market. By tapping
+                  Earth’s constant heat source, CoreVolt aims to deliver clean power at a few cents per kWh,
+                  undercutting fossil fuels and intermittent renewables while staying on 24/7.
+                </p>
+              </div>
+              <div className="relative w-full md:w-1/2 h-94 md:h-98 bg-black/30">
+                <Image
+                  src="/new%203.png"
+                  alt="CoreVolt benefit illustration 3"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-xl border border-[var(--lava)]/25 bg-[var(--basalt-light)]/90 overflow-hidden hover-lift transition-all duration-300">
+            <div className="flex flex-col md:flex-row h-full">
+              <div className="flex flex-col gap-3 p-4 md:w-1/2">
+                <h3 className="text-sm md:text-base font-semibold">New Energy Installation: Time Frame vs Cost</h3>
+                <p className="text-xs md:text-sm text-foreground/75 tracking-wide" style={{ wordSpacing: "0.08em" }}>
+                  CoreVolt stations are engineered to be built in years, not decades. Faster construction and
+                  lower capital requirements mean regions can bring new clean baseload online quickly, beating
+                  solar, wind, and nuclear on both deployment time and lifetime cost.
+                </p>
+              </div>
+              <div className="relative w-full md:w-1/2 h-94 md:h-98 bg-black/30">
+                <Image
+                  src="/new%204.png"
+                  alt="CoreVolt benefit illustration 4"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Problem Section */}
       <section id="problem" className="py-10 space-y-10 relative">
         {/* Section Background */}
@@ -166,7 +266,7 @@ export default function Home() {
             <h2 className="text-xl md:text-2xl font-semibold">PyraPipe™ System</h2>
             <ul className="list-disc pl-5 text-foreground/80 space-y-1">
               <li>Modular design with replaceable lava-contact tips</li>
-              <li>Aerogel insulation + ceramic shields + carbon-carbon core</li>
+              <li>Aerogel insulation + ceramic shields + carbon core</li>
               <li>Operates up to 1400°C</li>
               <li>Withstands 25+ years in magma-adjacent zones</li>
             </ul>

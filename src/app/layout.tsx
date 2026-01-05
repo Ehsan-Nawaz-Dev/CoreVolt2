@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CoreValt",
+  title: "CoreVolt",
   description: "PyraPipe™, CoreVolt Loop",
 };
 
